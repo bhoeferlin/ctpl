@@ -3,7 +3,6 @@ project(ctpl VERSION 1.0.0 LANGUAGES CXX DESCRIPTION "Modern and efficient C++ T
 set(CMAKE_CXX_STANDARD 11)
 
 include(GNUInstallDirs)
-include(CMakePackageConfigHelpers)
 
 set(SOURCE_HEADERS
     src/ctpl_stl.hpp
