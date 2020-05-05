@@ -242,5 +242,3 @@ class thread_pool {
 };
 
 }  // namespace ctpl
-
-#endif  // __ctpl_stl_thread_pool_H__
