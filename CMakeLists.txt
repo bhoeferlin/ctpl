@@ -5,13 +5,13 @@ set(CMAKE_CXX_STANDARD 11)
 include(GNUInstallDirs)
 
 set(SOURCE_HEADERS
-    src/ctpl_stl.hpp
-    src/ctpl.hpp
+    ${PROJECT_NAME}/ctpl_stl.hpp
+    ${PROJECT_NAME}/ctpl.hpp
 )
 
 add_library(${PROJECT_NAME} INTERFACE)
 target_include_directories(${PROJECT_NAME} INTERFACE
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
 
